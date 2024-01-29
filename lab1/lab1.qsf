@@ -19,7 +19,7 @@
 #
 # Quartus Prime
 # Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-# Date created = 14:13:28  January 29, 2024
+# Date created = 14:23:31  January 29, 2024
 #
 # -------------------------------------------------------------------------- #
 #
@@ -43,6 +43,10 @@ set_global_assignment -name TOP_LEVEL_ENTITY DE10_LITE_Golden_Top
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:45:13 JUNE 17,2016"
 set_global_assignment -name LAST_QUARTUS_VERSION "16.1.0 Lite Edition"
+set_global_assignment -name VHDL_FILE adder_tb.vhd
+set_global_assignment -name VHDL_FILE Encoder_tb.vhd
+set_global_assignment -name VHDL_FILE Register_tb.vhd
+set_global_assignment -name VHDL_FILE top_level.vhd
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
 set_global_assignment -name DEVICE_FILTER_PIN_COUNT 484
