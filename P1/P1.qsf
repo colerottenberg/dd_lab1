@@ -19,14 +19,14 @@
 #
 # Quartus Prime
 # Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-# Date created = 14:23:31  January 29, 2024
+# Date created = 19:21:00  January 29, 2024
 #
 # -------------------------------------------------------------------------- #
 #
 # Notes:
 #
 # 1) The default values for assignments are stored in the file:
-#		lab1_assignment_defaults.qdf
+#		P1_assignment_defaults.qdf
 #    If this file doesn't exist, see file:
 #		assignment_defaults.qdf
 #
