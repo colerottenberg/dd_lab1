@@ -2,6 +2,11 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+-- An encoder takes in a set of 8 bits and outputs a 4 bit code corresponding to the input
+-- The output is a 4 bit code corresponding to the input
+-- The output is 1001 if the input is not one of the 8 valid codes
+-- This signals multiple bits are sent to the encoder
+
 entity Encoder is 
     port(
         clk : in std_logic;
