@@ -14,7 +14,7 @@ end entity demux;
 
 architecture rtl of demux is
 begin
-    process (sel, input)
+    process (sel, bus)
     begin
         case sel is
             when "00" => out0 <= input;

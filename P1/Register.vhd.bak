@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 -- Register: A generic register with generic width called INPUT_WIDTH
 -- The reset is synchronous and active high
 
-entity Reg is
+entity Register is
     generic (
         INPUT_WIDTH : integer := 8
     );
@@ -15,9 +15,9 @@ entity Reg is
         input : in std_logic_vector(INPUT_WIDTH-1 downto 0);
         output : out std_logic_vector(INPUT_WIDTH-1 downto 0)
     );
-end entity Reg;
+end entity Register;
 
-architecture Behavioral of Reg is
+architecture Behavioral of Register is
 begin
     process(clk, reset)
     begin
