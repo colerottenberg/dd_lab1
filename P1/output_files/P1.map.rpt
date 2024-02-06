@@ -1,5 +1,5 @@
 Analysis & Synthesis report for P1
-Wed Jan 31 11:07:14 2024
+Tue Feb  6 10:00:14 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Wed Jan 31 11:07:14 2024              ;
+; Analysis & Synthesis Status        ; Failed - Tue Feb  6 10:00:14 2024              ;
 ; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                      ; P1                                             ;
 ; Top-level Entity Name              ; Encoder_tb                                     ;
@@ -147,8 +147,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 24          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -164,10 +164,10 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Wed Jan 31 11:07:07 2024
+    Info: Processing started: Tue Feb  6 10:00:11 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off P1 -c P1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file Encoder_tb.vhd
     Info (12022): Found design unit 1: Encoder_tb-tb_arch File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Encoder_tb.vhd Line: 11
     Info (12023): Found entity 1: Encoder_tb File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Encoder_tb.vhd Line: 8
@@ -197,9 +197,9 @@ Warning (10036): Verilog HDL or VHDL warning at Encoder_tb.vhd(13): object "ia_s
 Error (10533): VHDL Wait Statement error at Encoder_tb.vhd(31): Wait Statement must contain condition clause with UNTIL keyword File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Encoder_tb.vhd Line: 31
 Error (12153): Can't elaborate top-level user hierarchy
 Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 3 warnings
-    Error: Peak virtual memory: 398 megabytes
-    Error: Processing ended: Wed Jan 31 11:07:14 2024
-    Error: Elapsed time: 00:00:07
-    Error: Total CPU time (on all processors): 00:00:20
+    Error: Peak virtual memory: 410 megabytes
+    Error: Processing ended: Tue Feb  6 10:00:14 2024
+    Error: Elapsed time: 00:00:03
+    Error: Total CPU time (on all processors): 00:00:10
 
 

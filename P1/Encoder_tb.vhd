@@ -28,16 +28,16 @@ begin
     begin
         -- Test Case 1
         input_vector <= "00010000";  -- Test input
-        wait for 10 ns;
+        wait;
         report "Test Case 1 - Input Vector: " & integer'image(to_integer(unsigned(input_vector)));
         report "Test Case 1 - Encoded Output: " & integer'image(to_integer(unsigned(encoded_output)));
 
         -- Test Case 2
         input_vector <= "01000000";  -- Another test input
-        wait for 10 ns;
+        wait;
         report "Test Case 2 - Input Vector: " & integer'image(to_integer(unsigned(input_vector)));
         report "Test Case 2 - Encoded Output: " & integer'image(to_integer(unsigned(encoded_output)));
         -- Finish the simulation
         wait;
     end process;
-end architecture;
+end architecture tb_arch;
