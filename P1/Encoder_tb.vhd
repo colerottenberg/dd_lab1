@@ -24,7 +24,7 @@ begin
         );
 
     -- Test process
-    process
+    test: process is
     begin
         -- Test Case 1
         input_vector <= "00010000";  -- Test input
