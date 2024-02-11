@@ -1,0 +1,58 @@
+# Loading project P1_Sim
+# Compile of Encoder.vhd was successful.
+# Compile of Encoder_tb.vhd was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+# Load canceled
+vsim work.encoder_tb
+# vsim work.encoder_tb 
+# Start time: 16:31:33 on Feb 11,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.encoder_tb(tb_arch)
+# Loading work.encoder(rtl)
+# Load canceled
+# Compile of Encoder.vhd was successful.
+# Compile of Encoder_tb.vhd was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+vsim work.encoder work.encoder_tb
+# End time: 16:34:26 on Feb 11,2024, Elapsed time: 0:02:53
+# Errors: 0, Warnings: 4
+# vsim work.encoder work.encoder_tb 
+# Start time: 16:34:26 on Feb 11,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.encoder(rtl)
+# Loading work.encoder_tb(tb_arch)
+add wave -position insertpoint begin
+# ** UI-Msg: (vish-4014) No objects found matching 'begin'.
+add wave -position insertpoint begin
+# ** UI-Msg: (vish-4014) No objects found matching 'begin'.
+add wave -position end  sim:/encoder_tb/input_vector
+add wave -position end  sim:/encoder_tb/ia_signal
+run -all
+# ** Note: Test Case 1 - Input Vector: 16
+#    Time: 10 ns  Iteration: 0  Instance: /encoder_tb
+# ** Note: Test Case 1 - Encoded Output: 4
+#    Time: 10 ns  Iteration: 0  Instance: /encoder_tb
+# ** Note: Test Case 2 - Input Vector: 64
+#    Time: 20 ns  Iteration: 0  Instance: /encoder_tb
+# ** Note: Test Case 2 - Encoded Output: 6
+#    Time: 20 ns  Iteration: 0  Instance: /encoder_tb
+run -all
+run -continue
+run
+add wave -position end  sim:/encoder_tb/encoded_output
+run -all
+add wave -position insertpoint /encoder_tb/encoded_output
+run -all
+run -all
+add wave -position end  sim:/encoder_tb/encoded_output
+run -continue
+run -all
+run -all

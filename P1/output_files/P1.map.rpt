@@ -1,5 +1,5 @@
-Analysis & Synthesis report for P1
-Tue Feb  6 10:00:14 2024
+Analysis & Elaboration report for P1
+Sun Feb 11 15:41:06 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -7,10 +7,10 @@ Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Analysis & Elaboration Messages
 
 
 
@@ -35,9 +35,9 @@ https://fpgasoftware.intel.com/eula.
 
 
 +-------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                        ;
+; Analysis & Elaboration Summary                                                      ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Tue Feb  6 10:00:14 2024              ;
+; Analysis & Elaboration Status      ; Failed - Sun Feb 11 15:41:06 2024              ;
 ; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                      ; P1                                             ;
 ; Top-level Entity Name              ; Encoder_tb                                     ;
@@ -56,8 +56,24 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------+------------------------------------------------+
 
 
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 24          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                              ;
+; Analysis & Elaboration Settings                                                                            ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
@@ -142,30 +158,14 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 24          ;
-; Maximum allowed            ; 16          ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Tue Feb  6 10:00:11 2024
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off P1 -c P1
+    Info: Processing started: Sun Feb 11 15:41:03 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off P1 -c P1 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file Encoder_tb.vhd
@@ -196,9 +196,9 @@ Info (12127): Elaborating entity "Encoder_tb" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at Encoder_tb.vhd(13): object "ia_signal" assigned a value but never read File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Encoder_tb.vhd Line: 13
 Error (10533): VHDL Wait Statement error at Encoder_tb.vhd(31): Wait Statement must contain condition clause with UNTIL keyword File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Encoder_tb.vhd Line: 31
 Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 3 warnings
-    Error: Peak virtual memory: 410 megabytes
-    Error: Processing ended: Tue Feb  6 10:00:14 2024
+Error: Quartus Prime Analysis & Elaboration was unsuccessful. 2 errors, 3 warnings
+    Error: Peak virtual memory: 730 megabytes
+    Error: Processing ended: Sun Feb 11 15:41:06 2024
     Error: Elapsed time: 00:00:03
     Error: Total CPU time (on all processors): 00:00:10
 
