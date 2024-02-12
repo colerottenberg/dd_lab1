@@ -8,23 +8,26 @@ entity mux is
     generic(N: integer := 4);
     port(
         in0, in1, in2, in3: in std_logic_vector(N-1 downto 0);
-        sel0, sel1: in std_logic;
+        sel : in std_logic_vector(1 downto 0);
         o: out std_logic_vector(N-1 downto 0)
     );
 end mux;
 
 architecture mux_arch of mux is
 begin
-    process(in0, in1, in2, in3, sel0, sel1)
+    process(in0, in1, in2, in3, sel)
     begin
-        if sel0 = '0' and sel1 = '0' then
-            o <= in0;
-        elsif sel0 = '0' and sel1 = '1' then
-            o <= in1;
-        elsif sel0 = '1' and sel1 = '0' then
-            o <= in2;
-        elsif sel0 = '1' and sel1 = '1' then
-            o <= in3;
-        end if;
+        case sel is
+            when "00" =>
+                o <= in0;
+            when "01" =>
+                o <= in1;
+            when "10" =>
+                o <= in2;
+            when "11" =>
+                o <= in3;
+            when others =>
+                o <= (others => 'X');
+        end case;
     end process;
 end mux_arch;

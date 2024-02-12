@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Failed - Sun Feb 11 15:41:06 2024
+Analysis & Synthesis Status : Failed - Sun Feb 11 19:01:22 2024
 Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 Revision Name : P1
-Top-level Entity Name : Encoder_tb
+Top-level Entity Name : Encoder
 Family : MAX 10
 Total logic elements : N/A until Partition Merge
     Total combinational functions : N/A until Partition Merge

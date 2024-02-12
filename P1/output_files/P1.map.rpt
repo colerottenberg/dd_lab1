@@ -1,5 +1,5 @@
-Analysis & Elaboration report for P1
-Sun Feb 11 15:41:06 2024
+Analysis & Synthesis report for P1
+Sun Feb 11 19:01:22 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -7,10 +7,10 @@ Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
 
 
 
@@ -35,12 +35,12 @@ https://fpgasoftware.intel.com/eula.
 
 
 +-------------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                      ;
+; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status      ; Failed - Sun Feb 11 15:41:06 2024              ;
+; Analysis & Synthesis Status        ; Failed - Sun Feb 11 19:01:22 2024              ;
 ; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                      ; P1                                             ;
-; Top-level Entity Name              ; Encoder_tb                                     ;
+; Top-level Entity Name              ; Encoder                                        ;
 ; Family                             ; MAX 10                                         ;
 ; Total logic elements               ; N/A until Partition Merge                      ;
 ;     Total combinational functions  ; N/A until Partition Merge                      ;
@@ -56,29 +56,13 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------+------------------------------------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 24          ;
-; Maximum allowed            ; 16          ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                            ;
+; Analysis & Synthesis Settings                                                                              ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 10M50DAF484C6GES   ;                    ;
-; Top-level entity name                                            ; Encoder_tb         ; P1                 ;
+; Top-level entity name                                            ; Encoder            ; P1                 ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -158,19 +142,35 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 24          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Sun Feb 11 15:41:03 2024
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off P1 -c P1 --analysis_and_elaboration
+    Info: Processing started: Sun Feb 11 19:01:19 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off P1 -c P1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file Encoder_tb.vhd
-    Info (12022): Found design unit 1: Encoder_tb-tb_arch File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Encoder_tb.vhd Line: 11
-    Info (12023): Found entity 1: Encoder_tb File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Encoder_tb.vhd Line: 8
+Error (10500): VHDL syntax error at Encoder_tb.vhd(32) near text "report";  expecting ";" File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Encoder_tb.vhd Line: 32
+Error (10500): VHDL syntax error at Encoder_tb.vhd(38) near text "report";  expecting ";" File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Encoder_tb.vhd Line: 38
+Info (12021): Found 0 design units, including 0 entities, in source file Encoder_tb.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file Register_tb.vhd
     Info (12022): Found design unit 1: Register_tb-tb_arch File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Register_tb.vhd Line: 8
     Info (12023): Found entity 1: Register_tb File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Register_tb.vhd Line: 5
@@ -192,13 +192,12 @@ Info (12021): Found 2 design units, including 1 entities, in source file Registe
 Info (12021): Found 2 design units, including 1 entities, in source file Encoder.vhd
     Info (12022): Found design unit 1: encoder-rtl File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Encoder.vhd Line: 20
     Info (12023): Found entity 1: encoder File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Encoder.vhd Line: 9
-Info (12127): Elaborating entity "Encoder_tb" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at Encoder_tb.vhd(13): object "ia_signal" assigned a value but never read File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Encoder_tb.vhd Line: 13
-Error (10533): VHDL Wait Statement error at Encoder_tb.vhd(31): Wait Statement must contain condition clause with UNTIL keyword File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Encoder_tb.vhd Line: 31
-Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus Prime Analysis & Elaboration was unsuccessful. 2 errors, 3 warnings
-    Error: Peak virtual memory: 730 megabytes
-    Error: Processing ended: Sun Feb 11 15:41:06 2024
+Info (12021): Found 2 design units, including 1 entities, in source file Mux_tb.vhd
+    Info (12022): Found design unit 1: Mux4to1_tb-Mux4to1_tb_arch File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Mux_tb.vhd Line: 11
+    Info (12023): Found entity 1: Mux4to1_tb File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Mux_tb.vhd Line: 8
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 2 warnings
+    Error: Peak virtual memory: 410 megabytes
+    Error: Processing ended: Sun Feb 11 19:01:22 2024
     Error: Elapsed time: 00:00:03
     Error: Total CPU time (on all processors): 00:00:10
 
