@@ -1,14 +1,4 @@
-C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Mux_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Mux_tb.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity Mux4to1_tb
--- Compiling architecture Mux4to1_tb_arch of Mux4to1_tb
-
-} {} {}} C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Demux.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Demux.vhd
+C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Demux.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Demux.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -17,15 +7,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity demux
 -- Compiling architecture rtl of demux
 
-} {} {}} C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Encoder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Encoder.vhd
+} {} {}} C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Mux_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Mux_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package MATH_REAL
--- Compiling entity encoder
--- Compiling architecture rtl of encoder
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Mux4to1_tb
+-- Compiling architecture Mux4to1_tb_arch of Mux4to1_tb
 
 } {} {}} C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Demux_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Demux_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -36,14 +26,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity demux_tb
 -- Compiling architecture tb of demux_tb
 
-} {} {}} C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Register.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Register.vhd
+} {} {}} C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Encoder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Encoder.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity Reg
--- Compiling architecture Behavioral of Reg
+-- Loading package MATH_REAL
+-- Compiling entity encoder
+-- Compiling architecture rtl of encoder
 
 } {} {}} C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Encoder_tb.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Encoder_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -58,14 +49,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 ** Warning: C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Encoder_tb.vhd(31): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 ** Warning: C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Encoder_tb.vhd(37): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 
-} {} {}} C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Mux.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Mux.vhd
+} {} {}} C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Register.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Register.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity mux
--- Compiling architecture mux_arch of mux
+-- Compiling entity Reg
+-- Compiling architecture Behavioral of Reg
 
 } {} {}} C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Register_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Register_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -76,5 +67,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity Register_tb
 -- Compiling architecture tb_arch of Register_tb
 -- Loading entity Reg
+
+} {} {}} C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Mux.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Mux.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mux
+-- Compiling architecture mux_arch of mux
 
 } {} {}}

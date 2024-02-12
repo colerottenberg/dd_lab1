@@ -45,3 +45,5 @@ sim:/mux4to1_tb/in3 \
 sim:/mux4to1_tb/o \
 sim:/mux4to1_tb/sel
 run -all
+# End time: 02:43:02 on Feb 12,2024, Elapsed time: 0:36:34
+# Errors: 0, Warnings: 1
