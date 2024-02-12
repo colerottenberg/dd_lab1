@@ -1,6 +1,6 @@
 Analysis & Synthesis report for P1
-Sun Feb 11 19:01:22 2024
-Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Mon Feb 12 00:47:41 2024
+Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
 ---------------------
@@ -10,14 +10,22 @@ Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |Mux
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2023  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -37,22 +45,22 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sun Feb 11 19:01:22 2024              ;
-; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Mon Feb 12 00:47:41 2024          ;
+; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                      ; P1                                             ;
-; Top-level Entity Name              ; Encoder                                        ;
+; Top-level Entity Name              ; mux                                            ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; N/A until Partition Merge                      ;
-;     Total combinational functions  ; N/A until Partition Merge                      ;
-;     Dedicated logic registers      ; N/A until Partition Merge                      ;
-; Total registers                    ; N/A until Partition Merge                      ;
-; Total pins                         ; N/A until Partition Merge                      ;
-; Total virtual pins                 ; N/A until Partition Merge                      ;
-; Total memory bits                  ; N/A until Partition Merge                      ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                      ;
-; Total PLLs                         ; N/A until Partition Merge                      ;
-; UFM blocks                         ; N/A until Partition Merge                      ;
-; ADC blocks                         ; N/A until Partition Merge                      ;
+; Total logic elements               ; 8                                              ;
+;     Total combinational functions  ; 8                                              ;
+;     Dedicated logic registers      ; 0                                              ;
+; Total registers                    ; 0                                              ;
+; Total pins                         ; 22                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
+; UFM blocks                         ; 0                                              ;
+; ADC blocks                         ; 0                                              ;
 +------------------------------------+------------------------------------------------+
 
 
@@ -62,7 +70,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 10M50DAF484C6GES   ;                    ;
-; Top-level entity name                                            ; Encoder            ; P1                 ;
+; Top-level entity name                                            ; Mux                ; P1                 ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -158,47 +166,164 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                      ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                               ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
+; Mux.vhd                          ; yes             ; User VHDL File  ; C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Mux.vhd ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 8            ;
+;                                             ;              ;
+; Total combinational functions               ; 8            ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 8            ;
+;     -- 3 input functions                    ; 0            ;
+;     -- <=2 input functions                  ; 0            ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 8            ;
+;     -- arithmetic mode                      ; 0            ;
+;                                             ;              ;
+; Total registers                             ; 0            ;
+;     -- Dedicated logic registers            ; 0            ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 22           ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; sel[1]~input ;
+; Maximum fan-out                             ; 6            ;
+; Total fan-out                               ; 58           ;
+; Average fan-out                             ; 1.12         ;
++---------------------------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; |mux                       ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 22   ; 0            ; 0          ; |mux                ; mux         ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mux|Mux3                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |Mux ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; N              ; 4     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 22                          ;
+; cycloneiii_lcell_comb ; 8                           ;
+;     normal            ; 8                           ;
+;         4 data inputs ; 8                           ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.69                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Sun Feb 11 19:01:19 2024
+    Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+    Info: Processing started: Mon Feb 12 00:47:32 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off P1 -c P1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
-Error (10500): VHDL syntax error at Encoder_tb.vhd(32) near text "report";  expecting ";" File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Encoder_tb.vhd Line: 32
-Error (10500): VHDL syntax error at Encoder_tb.vhd(38) near text "report";  expecting ";" File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Encoder_tb.vhd Line: 38
-Info (12021): Found 0 design units, including 0 entities, in source file Encoder_tb.vhd
-Info (12021): Found 2 design units, including 1 entities, in source file Register_tb.vhd
-    Info (12022): Found design unit 1: Register_tb-tb_arch File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Register_tb.vhd Line: 8
-    Info (12023): Found entity 1: Register_tb File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Register_tb.vhd Line: 5
-Info (12021): Found 1 design units, including 1 entities, in source file DE10_LITE_Golden_Top.v
-    Info (12023): Found entity 1: DE10_LITE_Golden_Top File: /home/crott/Documents/spring24/dd/dd_lab1/P1/DE10_LITE_Golden_Top.v Line: 29
-Info (12021): Found 2 design units, including 1 entities, in source file Decoder.vhd
-    Info (12022): Found design unit 1: Decoder-Behavioral File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Decoder.vhd Line: 14
-    Info (12023): Found entity 1: Decoder File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Decoder.vhd Line: 7
-Warning (12090): Entity "mux" obtained from "Mux.vhd" instead of from Quartus Prime megafunction library File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Mux.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file Mux.vhd
-    Info (12022): Found design unit 1: mux-mux_arch File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Mux.vhd Line: 16
-    Info (12023): Found entity 1: mux File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Mux.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file Demux.vhd
-    Info (12022): Found design unit 1: demux-rtl File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Demux.vhd Line: 15
-    Info (12023): Found entity 1: demux File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Demux.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file Register.vhd
-    Info (12022): Found design unit 1: Reg-Behavioral File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Register.vhd Line: 20
-    Info (12023): Found entity 1: Reg File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Register.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file Encoder.vhd
-    Info (12022): Found design unit 1: encoder-rtl File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Encoder.vhd Line: 20
-    Info (12023): Found entity 1: encoder File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Encoder.vhd Line: 9
-Info (12021): Found 2 design units, including 1 entities, in source file Mux_tb.vhd
-    Info (12022): Found design unit 1: Mux4to1_tb-Mux4to1_tb_arch File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Mux_tb.vhd Line: 11
-    Info (12023): Found entity 1: Mux4to1_tb File: /home/crott/Documents/spring24/dd/dd_lab1/P1/Mux_tb.vhd Line: 8
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 2 warnings
-    Error: Peak virtual memory: 410 megabytes
-    Error: Processing ended: Sun Feb 11 19:01:22 2024
-    Error: Elapsed time: 00:00:03
-    Error: Total CPU time (on all processors): 00:00:10
+Info (12021): Found 2 design units, including 1 entities, in source file encoder_tb.vhd
+    Info (12022): Found design unit 1: Encoder_tb-tb_arch File: C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Encoder_tb.vhd Line: 11
+    Info (12023): Found entity 1: Encoder_tb File: C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Encoder_tb.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file register_tb.vhd
+    Info (12022): Found design unit 1: Register_tb-tb_arch File: C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Register_tb.vhd Line: 8
+    Info (12023): Found entity 1: Register_tb File: C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Register_tb.vhd Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file de10_lite_golden_top.v
+    Info (12023): Found entity 1: DE10_LITE_Golden_Top File: C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/DE10_LITE_Golden_Top.v Line: 29
+Info (12021): Found 2 design units, including 1 entities, in source file decoder.vhd
+    Info (12022): Found design unit 1: Decoder-Behavioral File: C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Decoder.vhd Line: 14
+    Info (12023): Found entity 1: Decoder File: C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Decoder.vhd Line: 7
+Warning (12090): Entity "mux" obtained from "Mux.vhd" instead of from Quartus Prime megafunction library File: C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Mux.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
+    Info (12022): Found design unit 1: mux-mux_arch File: C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Mux.vhd Line: 16
+    Info (12023): Found entity 1: mux File: C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Mux.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file demux.vhd
+    Info (12022): Found design unit 1: demux-rtl File: C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Demux.vhd Line: 15
+    Info (12023): Found entity 1: demux File: C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Demux.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file register.vhd
+    Info (12022): Found design unit 1: Reg-Behavioral File: C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Register.vhd Line: 20
+    Info (12023): Found entity 1: Reg File: C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Register.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file encoder.vhd
+    Info (12022): Found design unit 1: encoder-rtl File: C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Encoder.vhd Line: 20
+    Info (12023): Found entity 1: encoder File: C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Encoder.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file mux_tb.vhd
+    Info (12022): Found design unit 1: Mux4to1_tb-Mux4to1_tb_arch File: C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Mux_tb.vhd Line: 11
+    Info (12023): Found entity 1: Mux4to1_tb File: C:/Users/coler/Documents/uf/spring24/dd/dd_lab1/P1/Mux_tb.vhd Line: 8
+Info (12127): Elaborating entity "Mux" for the top level hierarchy
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 30 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 18 input pins
+    Info (21059): Implemented 4 output pins
+    Info (21061): Implemented 8 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4843 megabytes
+    Info: Processing ended: Mon Feb 12 00:47:41 2024
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:04
 
 
