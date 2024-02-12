@@ -1,0 +1,47 @@
+vsim -gui work.demux_tb
+# vsim -gui work.demux_tb 
+# Start time: 02:04:01 on Feb 12,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.demux_tb(tb)
+# Loading work.demux(rtl)
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/demux_tb/input \
+sim:/demux_tb/out0 \
+sim:/demux_tb/out1 \
+sim:/demux_tb/out2 \
+sim:/demux_tb/out3 \
+sim:/demux_tb/sel \
+sim:/demux_tb/WIDTH
+run
+run
+run
+run -all
+# Break key hit
+vsim -gui work.mux4to1_tb
+# End time: 02:06:28 on Feb 12,2024, Elapsed time: 0:02:27
+# Errors: 0, Warnings: 1
+# vsim -gui work.mux4to1_tb 
+# Start time: 02:06:28 on Feb 12,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.mux4to1_tb(mux4to1_tb_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.mux(mux_arch)
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/mux4to1_tb/in0 \
+sim:/mux4to1_tb/in1 \
+sim:/mux4to1_tb/in2 \
+sim:/mux4to1_tb/in3 \
+sim:/mux4to1_tb/o \
+sim:/mux4to1_tb/sel
+run -all
